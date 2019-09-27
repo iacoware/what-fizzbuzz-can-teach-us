@@ -13,14 +13,16 @@ namespace FizzBuzzKata
             var result = "";
             foreach (var divisorAndWord in divisorAndWords)
             {
+                string word;
                 if (IsDivisible(num, divisorAndWord.Divisor))
                 {
-                    result += divisorAndWord.Word;
+                    word = divisorAndWord.Word;
                 }
                 else
                 {
-                    result += "";
+                    word = "";
                 }
+                result += word;
             }
 
             if (result != "")
