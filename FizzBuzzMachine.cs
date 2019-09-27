@@ -4,11 +4,13 @@ namespace FizzBuzzKata
     {
         public string Say(int num)
         {
+            var divisorAndWords = new[]
+            {
+                (Divisor: 3, Word: "Fizz"), 
+                (Divisor: 5, Word: "Buzz")
+            };
+            
             var result = "";
-            var divisorAndWord = (Divisor: 3, Word: "Fizz");
-            var divisorAndWord2 = (Divisor: 5, Word: "Buzz");
-            var divisorAndWords = new[] {divisorAndWord, divisorAndWord2};
-
             foreach (var divisorAndWordItem in divisorAndWords)
             {
                 if (IsDivisible(num, divisorAndWordItem.Divisor))
