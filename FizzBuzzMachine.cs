@@ -4,9 +4,6 @@ namespace FizzBuzzKata
     {
         public string Say(int num)
         {
-            if (num % 3 == 0 && num % 5 == 0) 
-                return "Fizz" + "Buzz";
-
             var result = "";
             if (num % 3 == 0)
             {
