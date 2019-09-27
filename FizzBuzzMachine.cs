@@ -6,16 +6,16 @@ namespace FizzBuzzKata
         {
             var divisorAndWords = new[]
             {
-                (Divisor: 3, Word: "Fizz"), 
-                (Divisor: 5, Word: "Buzz")
+                new DivisorAndWord(3, "Fizz"), 
+                new DivisorAndWord(5, "Buzz")
             };
             
             var result = "";
-            foreach (var divisorAndWordItem in divisorAndWords)
+            foreach (var divisorAndWord in divisorAndWords)
             {
-                if (IsDivisible(num, divisorAndWordItem.Divisor))
+                if (IsDivisible(num, divisorAndWord.Divisor))
                 {
-                    result += divisorAndWordItem.Word;
+                    result += divisorAndWord.Word;
                 }
             }
 
