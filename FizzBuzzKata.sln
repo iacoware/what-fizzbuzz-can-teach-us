@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzKata", "FizzBuzzKata.csproj", "{BDEBFE98-93FE-44E8-BB8D-542BD682ED47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDEBFE98-93FE-44E8-BB8D-542BD682ED47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEBFE98-93FE-44E8-BB8D-542BD682ED47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEBFE98-93FE-44E8-BB8D-542BD682ED47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEBFE98-93FE-44E8-BB8D-542BD682ED47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
