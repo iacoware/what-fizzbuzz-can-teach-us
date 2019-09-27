@@ -17,6 +17,10 @@ namespace FizzBuzzKata
                 {
                     result += divisorAndWord.Word;
                 }
+                else
+                {
+                    result += "";
+                }
             }
 
             if (result != "")
