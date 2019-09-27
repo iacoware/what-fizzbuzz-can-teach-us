@@ -10,5 +10,10 @@ namespace FizzBuzzKata
             Divisor = divisor;
             Word = word;
         }
+
+        public static bool IsDivisible(int num, int divisor)
+        {
+            return num % divisor == 0;
+        }
     }
 }

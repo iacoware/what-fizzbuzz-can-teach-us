@@ -22,10 +22,10 @@ namespace FizzBuzzKata
             return num.ToString();
         }
 
-        static string EvaluateAndGetWordOrEmpty(int num, DivisorAndWord divisorAndWord)
+        string EvaluateAndGetWordOrEmpty(int num, DivisorAndWord divisorAndWord)
         {
             string word;
-            if (IsDivisible(num, divisorAndWord.Divisor))
+            if (DivisorAndWord.IsDivisible(num, divisorAndWord.Divisor))
             {
                 word = divisorAndWord.Word;
             }
@@ -35,11 +35,6 @@ namespace FizzBuzzKata
             }
 
             return word;
-        }
-
-        static bool IsDivisible(int num, int divisor)
-        {
-            return num % divisor == 0;
         }
     }
 }
