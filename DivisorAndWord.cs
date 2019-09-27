@@ -11,7 +11,15 @@ namespace FizzBuzzKata
             Word = word;
         }
 
-        public static bool IsDivisible(int num, int divisor)
+        public string EvaluateAndGetWordOrEmpty(int num)
+        {
+            if (IsDivisible(num, Divisor))
+                return Word;
+            else
+                return "";
+        }
+
+        static bool IsDivisible(int num, int divisor)
         {
             return num % divisor == 0;
         }
