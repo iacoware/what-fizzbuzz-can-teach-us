@@ -11,13 +11,11 @@ namespace FizzBuzzKata
             if (num % 3 == 0)
             {
                 result += "Fizz";
-                return "Fizz";
             }
 
             if (num % 5 == 0)
             {
                 result += "Buzz";
-                return "Buzz";
             }
 
             if (result != "")
