@@ -5,9 +5,10 @@ namespace FizzBuzzKata
         public string Say(int num)
         {
             var result = "";
-            if (IsDivisible(num, 3))
+            var divisorAndWord = (Divisor: 3, Word: "Fizz");
+            if (IsDivisible(num, divisorAndWord.Divisor))
             {
-                result += "Fizz";
+                result += divisorAndWord.Word;
             }
 
             if (IsDivisible(num, 5))
