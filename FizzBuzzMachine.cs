@@ -4,13 +4,9 @@ namespace FizzBuzzKata
     {
         readonly DivisorAndWord[] divisorAndWords;
 
-        public FizzBuzzMachine()
+        public FizzBuzzMachine(DivisorAndWord[] divisorAndWords)
         {
-            divisorAndWords = new[]
-            {
-                new DivisorAndWord(3, "Fizz"),
-                new DivisorAndWord(5, "Buzz")
-            };
+            this.divisorAndWords = divisorAndWords;
         }
 
         public string Say(int num)

@@ -8,7 +8,11 @@ namespace FizzBuzzKata
         {
             Console.WriteLine("Welcome to FizzBuzz");
 
-            var fizzBuzz = new FizzBuzzMachine();
+            var fizzBuzz = new FizzBuzzMachine(new[]
+            {
+                new DivisorAndWord(3, "Fizz"),
+                new DivisorAndWord(5, "Buzz")
+            });
             for (int i = 1; i < 500; i++)
             {
                 var result = fizzBuzz.Say(i);
