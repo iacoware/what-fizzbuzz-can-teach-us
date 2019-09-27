@@ -11,7 +11,8 @@ namespace FizzBuzzKata
             var fizzBuzz = new FizzBuzzMachine(new[]
             {
                 new DivisorAndWord(3, "Fizz"),
-                new DivisorAndWord(5, "Buzz")
+                new DivisorAndWord(5, "Buzz"),
+                new DivisorAndWord(7, "Bang")
             });
             for (int i = 1; i < 500; i++)
             {
@@ -32,6 +33,7 @@ namespace FizzBuzzKata
             var length = text.Length;
             if (length == 4) return ConsoleColor.DarkGreen;
             if (length == 8) return ConsoleColor.DarkCyan;
+            if (length == 12) return ConsoleColor.DarkMagenta;
 
             return ConsoleColor.White;
         }
