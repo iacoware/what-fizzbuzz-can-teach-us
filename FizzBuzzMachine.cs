@@ -13,22 +13,28 @@ namespace FizzBuzzKata
             var result = "";
             foreach (var divisorAndWord in divisorAndWords)
             {
-                string word;
-                if (IsDivisible(num, divisorAndWord.Divisor))
-                {
-                    word = divisorAndWord.Word;
-                }
-                else
-                {
-                    word = "";
-                }
-                result += word;
+                result += EvaluateAndGetWordOrEmpty(num, divisorAndWord);
             }
 
             if (result != "")
                 return result;
 
             return num.ToString();
+        }
+
+        static string EvaluateAndGetWordOrEmpty(int num, DivisorAndWord divisorAndWord)
+        {
+            string word;
+            if (IsDivisible(num, divisorAndWord.Divisor))
+            {
+                word = divisorAndWord.Word;
+            }
+            else
+            {
+                word = "";
+            }
+
+            return word;
         }
 
         static bool IsDivisible(int num, int divisor)
