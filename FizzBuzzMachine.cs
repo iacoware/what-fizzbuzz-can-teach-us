@@ -2,14 +2,19 @@ namespace FizzBuzzKata
 {
     public class FizzBuzzMachine
     {
-        public string Say(int num)
+        readonly DivisorAndWord[] divisorAndWords;
+
+        public FizzBuzzMachine()
         {
-            var divisorAndWords = new[]
+            divisorAndWords = new[]
             {
                 new DivisorAndWord(3, "Fizz"),
                 new DivisorAndWord(5, "Buzz")
             };
+        }
 
+        public string Say(int num)
+        {
             var result = "";
             foreach (var divisorAndWord in divisorAndWords)
             {
