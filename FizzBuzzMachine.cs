@@ -5,12 +5,12 @@ namespace FizzBuzzKata
         public string Say(int num)
         {
             var result = "";
-            if (num % 3 == 0)
+            if (IsDivisible(num, 3))
             {
                 result += "Fizz";
             }
 
-            if (num % 5 == 0)
+            if (IsDivisible(num, 5))
             {
                 result += "Buzz";
             }
@@ -19,6 +19,11 @@ namespace FizzBuzzKata
                 return result;
 
             return num.ToString();
+        }
+
+        static bool IsDivisible(int num, int divisor)
+        {
+            return num % divisor == 0;
         }
     }
 }
