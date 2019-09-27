@@ -6,14 +6,16 @@ namespace FizzBuzzKata
         {
             var result = "";
             var divisorAndWord = (Divisor: 3, Word: "Fizz");
+            var divisorAndWord2 = (Divisor: 5, Word: "Buzz");
+            
             if (IsDivisible(num, divisorAndWord.Divisor))
             {
                 result += divisorAndWord.Word;
             }
 
-            if (IsDivisible(num, 5))
+            if (IsDivisible(num, divisorAndWord2.Divisor))
             {
-                result += "Buzz";
+                result += divisorAndWord2.Word;
             }
 
             if (result != "")
